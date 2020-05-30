@@ -90,7 +90,7 @@ namespace BlackMagic
             for (int i = 0; i < boidPts.Count; i++)
                 rTree.Insert(boidPts[i], i);
 
-            // Array of integer lists to store indexes of the boids within collision radius for all boids in the simulation
+            // Array of integer lists to store indexes of the boids within field of view for all boids in the simulation
             List<int>[] collisionIndices = new List<int>[boidPts.Count];
 
             for (int i = 0; i < boidPts.Count; i++)
@@ -136,7 +136,7 @@ namespace BlackMagic
             for (int i = 0; i < boidPts.Count; i++)
                 rTree.Insert(boidPts[i], i);
 
-            // Array of integer lists to store indexes of the boids within collision radius for all boids in the simulation
+            // Array of integer lists to store indexes of the boids within field of view for all boids in the simulation
             List<int>[] collisionIndices = new List<int>[boidPts.Count];
 
             for (int i = 0; i < boidPts.Count; i++)
@@ -163,7 +163,7 @@ namespace BlackMagic
         * 
         * Implemented using R-Trees for fast range search
         * 
-        * Averages the velocities of neighboring boids and adds it to the weighted acceleration 
+        * Computes centroid of neighboring boids and updates the weighted acceleration accordingly
         * 
         */
 
@@ -175,13 +175,13 @@ namespace BlackMagic
             for (int i = 0; i < boidPts.Count; i++)
                 rTree.Insert(boidPts[i], i);
 
-            // Array of integer lists to store indexes of the boids within collision radius for all boids in the simulation
+            // Array of integer lists to store indexes of the boids within field of view for all boids in the simulation
             List<int>[] collisionIndices = new List<int>[boidPts.Count];
 
             for (int i = 0; i < boidPts.Count; i++)
                 collisionIndices[i] = new List<int>();
 
-            // Spherical range search of R-Tree based on alignment field of view
+            // Spherical range search of R-Tree based on cohesion field of view
             for (int i = 0; i < boidPts.Count; i++)
                 rTree.Search(
                     new Sphere(boidPts[i], cohesionFOV),
