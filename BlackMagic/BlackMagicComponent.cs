@@ -76,7 +76,7 @@ namespace BlackMagic
         {
             get
             {
-                return null;
+                return Properties.Resources.icon;
             }
         }
 

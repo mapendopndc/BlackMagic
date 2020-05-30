@@ -1,0 +1,8 @@
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\bin\BlackMagic.dll
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\bin\BlackMagic.pdb
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\obj\Debug\BlackMagic.csprojAssemblyReference.cache
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\obj\Debug\BlackMagic.csproj.CoreCompileInputs.cache
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\obj\Debug\BlackMagic.dll
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\obj\Debug\BlackMagic.pdb
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\obj\Debug\BlackMagic.Properties.Resources.resources
+C:\Users\mapen\source\repos\BlackMagic\BlackMagic\obj\Debug\BlackMagic.csproj.GenerateResource.cache
